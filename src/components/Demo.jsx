@@ -35,10 +35,13 @@ const Demo = () => {
       const newArticle = { ...article, summary: data.summary };
       const updatedAllArticles = [newArticle, ...allArticles];
 
-      setArticle(newArticle);
       setAllArticles(updatedAllArticles);
       localStorage.setItem('articles', JSON.stringify(updatedAllArticles));
-      setArticle({...article, url: '' });
+      
+      setArticle({
+        url:'',
+        summary: newArticle.summary
+      });
     }
   };
 
