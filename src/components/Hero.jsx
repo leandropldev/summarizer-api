@@ -10,7 +10,7 @@ const Hero = () => {
                 onClick={() => window.open('https://github.com/leandropldev/summarizer-api')}
                 className='black_btn'
             >
-                Github!
+                Github
             </button>
         </nav>
 
